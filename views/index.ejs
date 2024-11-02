@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">
+                    <i class="fa-solid fa-address-card"></i> About Me</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#projects">
+                    <i class="fa-solid fa-file"></i> Projects</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">
+                    <i class="fa-solid fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="mb-4">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="/images/MyPic.png" alt="My picture" class="img-fluid">
+            <p>Hello! Welcome to my portfolio, my name is Syed.</p>
+        </section>
+
+        <section id="about" class="mb-4">
+            <h2>About Me</h2>
+            <img src="/images/Boat.png" alt="Picture of me driving a boat" class="img-fluid">
+            <p>Hi! I'm Syed Akbarzada. I love to travel, play sports, and keep up with new tech. I'm always interested in discovering new places and learning something different along the way..</p>
+        </section>
+
+        <section id="projects" class="mb-4">
+            <h2>Projects</h2>
+            <p>I have created a program that allows users to analyze a series of integers they enter. It prompts users to input numbers one at a time and stops when they enter a termination value, which is -1. After the input is complete, the program sorts the numbers into two groups: odd and even. It then calculates the average of each group, ensuring that if there are no entries in one category, it handles that gracefully by returning an average of 0. Additionally, the program raises each number to the power of its index in the list, which shows how each number changes based on its position. Once the calculations are done, the program displays the averages of both odd and even numbers along with the list of numbers raised to their respective indices. Finally, it gives users the option to start the process over with a new set of numbers, making it easy to perform multiple analyses without needing to restart the program. This interactive tool is designed to provide insights into number properties while keeping the user engaged.</p>
+        </section>
+
+        <section id="contact" class="mb-4">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form p-3 rounded">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://github.com/dontwanttoputithere"target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a> and <a href="https://linkedin.com/in/donthaveanaccount" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
